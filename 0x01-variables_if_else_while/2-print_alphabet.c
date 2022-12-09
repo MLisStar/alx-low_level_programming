@@ -2,16 +2,16 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * Main - entry point
+ * main - entry point
  *
- * return: Always 0 (Success)
+ * Return: Always 0 (Success)
  *
  */
 int main(void)
 {
 	char lowerCase;
 
-	for(lowerCase = 'a'; lowerCase <= 'z'; lowerCase++)
+	for( lowerCase = 'a'; lowerCase <= 'z'; lowerCase++)
 	{
 		putchar(lowerCase);
 	}
