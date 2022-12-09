@@ -1,14 +1,6 @@
 #include <stdio.h>
+//Main entry point. Return 0 (Success)
 
-/**
- *
- *  * main - Entry point
- *
- *   *
- *
- *    * Return: Always 0 (Success)
- *
- *     */
 int main(void)
 
 {
