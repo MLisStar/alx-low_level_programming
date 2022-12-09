@@ -11,11 +11,10 @@ int main(void)
 {
 	int i;
 
-	for (i = 0; i <= 9; i++)
+	for (i = 'z'; i >= 'a'; i--)
 	{
-		printf("%d", i);
+		putchar(i);
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
- 
 }
