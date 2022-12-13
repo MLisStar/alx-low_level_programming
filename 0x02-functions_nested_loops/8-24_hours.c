@@ -19,7 +19,7 @@ void jack_bauer(void)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			for (k = 0; k <= 6; k++)
+			for (k = 0; k <= 5; k++)
 			{
 				for (l = 0; l <= 9; l++)
 				{
