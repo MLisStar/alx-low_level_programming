@@ -5,9 +5,9 @@
  */
 int _abs(int n)
 {
-	int nvalue; 
+	int nvalue;
 
-	if (n > 0 || n ==0)
+	if (n > 0 || n == 0)
 	{
 		return (n);
 	}
