@@ -41,9 +41,22 @@ void print_to_98(int n)
 		for(i = n; i >= 98; i--)
 		{
 			d0 = i / 10;
-			d1 = i % 10;
-			_putchar('0' + d0);
-			_putchar('0' + d1);
+			if (d0 >= 10)
+			{
+				int d2;
+				d2 = d0 / 10;
+				_putchar('0' + d2);
+				d1 = d0 % 10;
+				_putchar('0' + d1);
+				d0 = i % 10;
+				_putchar('0' + d0);
+			}
+			else
+			{
+				d1 = i % 10;
+				_putchar('0' + d0);
+				_putchar('0' + d1);
+			}
 
 			if (i != 98)
 			{
