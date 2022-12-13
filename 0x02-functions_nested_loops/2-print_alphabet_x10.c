@@ -2,7 +2,7 @@
 /**
  * print_alphabet_x10 - print 10 times
  *
- * return void
+ * return: void
  *
  */
 void print_alphabet_x10(void)
@@ -10,10 +10,10 @@ void print_alphabet_x10(void)
 	int i = 0;
 	char j;
 
-	while(i <= 9)
+	while (i <= 9)
 	{
 		j = 'a';
-		while(j <= 'z')
+		while (j <= 'z')
 		{
 			_putchar(j);
 			j++;

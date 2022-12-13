@@ -14,5 +14,6 @@ int _abs(int n)
 	else
 	{
 		nvalue = n * -1;
+		return (nvalue);
 	}
 }
