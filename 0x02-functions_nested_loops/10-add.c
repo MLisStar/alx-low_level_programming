@@ -1,11 +1,12 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * add() - entry point
+ * add - entry point
  *
- *  adds two integers and returns the result.
+ * @n1: first parameter
+ * @n2: seconds parameter
  *
- *  Return result
+ *  Return: sum
  *
  */
 int add(int n1, int n2)

@@ -5,7 +5,7 @@
  *
  * prints the 9 times table, starting with 0
  *
- * Return void
+ * Return: void
  *
  */
 void times_table(void)
