@@ -23,4 +23,5 @@ int main(void)
 		fb2 = fb_sum;
 	}
 	printf("%.0f\n", total);
+	return (0);
 }
