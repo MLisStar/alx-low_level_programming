@@ -13,7 +13,6 @@
 void print_to_98(int n)
 {
 	int i;
-	int temp;
 
 	if (n <= 98)
 	{
