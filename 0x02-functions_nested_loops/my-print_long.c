@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * main - entry point
  * print_long - function to print
@@ -24,9 +25,7 @@ int main(void)
 		print_long(sum / 10);
 		_putchar((sum % 10)+ '0');
 	}
-
 }
-
 void print_long(long sum)
 {
 	if(value != 0) 
@@ -34,5 +33,4 @@ void print_long(long sum)
 		print_long(sum / 10);
 		_putchar((sum % 10) + '0');
 	}
-
 }
