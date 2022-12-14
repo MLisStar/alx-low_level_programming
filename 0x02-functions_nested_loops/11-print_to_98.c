@@ -1,11 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * print_to_98() - entry point
+ * print_to_98 - print integers to 98 from passed parameter
+ * @n: parameter passed
  *
  * prints all natural numbers from n to 98, followed by a new line.
  *
- * Return nothing
+ * Return: nothing
  *
  */
 void print_to_98(int n)
@@ -25,13 +26,21 @@ void print_to_98(int n)
 				_putchar('0' + d0);
 				_putchar('0' + d1);
 			}
-			else
+			else if (i < 0)
+			{
+
+			}
+			else (i >=0 && i <10)
 			{
 				_putchar('0' + i);
 			}
 			if (i != 98)
 			{
 				_putchar(44);
+				_putchar(32);
+			}
+			else
+			{
 				_putchar(32);
 			}
 		}
