@@ -2,10 +2,9 @@
 #include <stdlib.h>
 /**
  * _isalpha - entry point
+ *@c : character to be checked
  *
- * checks to see if c is an alphabetic character
- *
- * return 1 is c letter or 0 if c is not
+ * Return: 1 if c letter or 0 if c is not
  *
  */
 int _isalpha(int c)

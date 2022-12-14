@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * print_sign (int n) - print sign of n
+ * print_sign - print the sign.
+ * @n: is passed 
  * 
- * return: print_sign 1 if positive 0 if zero or -1 if negative
+ * Return: 1, 0, -1 
  *
  */
 int print_sign(int n)
