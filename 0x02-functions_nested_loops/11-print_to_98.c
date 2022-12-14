@@ -30,7 +30,7 @@ void print_to_98(int n)
 			{
 
 			}
-			else (i >=0 && i <10)
+			else if (i >=0 && i <10)
 			{
 				_putchar('0' + i);
 			}
