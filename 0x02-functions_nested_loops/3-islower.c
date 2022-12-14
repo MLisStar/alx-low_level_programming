@@ -2,7 +2,7 @@
 /**
  * _islower - entry point
  *
- * checks if c is lowercase
+ * @parameterc: character to be checked if lowercase
  *
  * Return: Always 1 if c is lowercase or 0 if c is not lowercase
  *
