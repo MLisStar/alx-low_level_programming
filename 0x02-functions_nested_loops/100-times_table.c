@@ -20,7 +20,7 @@ void print_times_table(int n)
 				prod = a * b;
 				_putchar(44);
 				_putchar(32);
-				if ( prod <= 9)
+				if (prod <= 9)
 				{
 					_putchar(32);
 					_putchar(32);
