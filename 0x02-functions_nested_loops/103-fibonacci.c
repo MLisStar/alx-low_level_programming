@@ -19,8 +19,8 @@ int main(void)
 		if ((fb_sum % 2) == 0)
 			total += fb_sum;
 
-			fb1 = fb2;
-			fb2 = fb_sum;
+		fb1 = fb2;
+		fb2 = fb_sum;
 	}
 	printf("%.0f\n", total);
 }
