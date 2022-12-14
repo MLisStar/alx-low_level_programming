@@ -12,10 +12,10 @@ int main(void)
 	unsigned long fb1_num1, fb1_num2, fb2_num1, fb2_num2;
 	unsigned long num1, num2;
 
-	for (count = 0 count < 92; count++)
+	for (count = 0; count < 92; count++)
 	{
 		sum = fb1 + fb2;
-		printf("%lu, " sum);
+		printf("%lu, ", sum);
 
 		fb1 = fb2;
 		fb2 = sum;
