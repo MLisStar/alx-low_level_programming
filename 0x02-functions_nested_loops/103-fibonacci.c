@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	unsigned long fb1 = 0, fb2 = 1 fb_sum;
+	unsigned long fb1 = 0, fb2 = 1, fb_sum;
 	float total;
 
 	while (1)
@@ -16,7 +16,7 @@ int main(void)
 		if (fb_sum > 4000000)
 			break;
 
-		if ((fb_sum % 2 == 0)
+		if ((fb_sum % 2) == 0)
 			total += fb_sum;
 
 			fb1 = fb2;
