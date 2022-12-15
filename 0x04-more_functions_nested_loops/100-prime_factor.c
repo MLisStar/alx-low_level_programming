@@ -14,9 +14,9 @@ int main(void)
 	{
 		if (n % i == 0)
 		{
-			if (n == 1)
+			if (n == i)
 			{
-				printf("%li\n", i);
+				printf("%ld\n", i);
 				break;
 			}
 			temp = n / i;
