@@ -16,7 +16,7 @@ int main(void)
 		{
 			if (n == 1)
 			{
-				printf("%ld\n", i);
+				printf("%li\n", i);
 				break;
 			}
 			temp = n / i;
