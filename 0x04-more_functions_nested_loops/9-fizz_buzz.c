@@ -5,6 +5,7 @@
  *
  * Description: prints 1-100 but Fizz for multiples of 3, buzz for multiples of 5,
  * and FizzBuzz for multiples of both
+ *
  * Return: 0
  */
 int main(void)
@@ -20,7 +21,7 @@ int main(void)
 		else if (i % 15 == 0)
 			printf("FizzBuzz");
 		else
-			printf("%d", i);
+			printf("%i", i);
 		if (i < 100)
 			printf(" ");
 	}
