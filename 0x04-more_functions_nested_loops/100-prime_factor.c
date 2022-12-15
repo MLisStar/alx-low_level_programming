@@ -12,9 +12,9 @@ int main(void)
 
 	for (i = 1; i <= n; i++)
 	{
-		if(n % i == 0)
+		if (n % i == 0)
 		{
-			if(n == 1)
+			if (n == 1)
 			{
 				printf("%ld\n", i);
 				break;
