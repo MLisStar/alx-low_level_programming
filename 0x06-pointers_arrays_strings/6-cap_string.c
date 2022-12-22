@@ -28,7 +28,7 @@ char *cap_string(char *s)
 		i++;
 	}
 	if (s[0] >= 'a' && s[0] <= 'z')
-		s[0] = 'A' + ([0] - 'a');
+		s[0] = 'A' + (s[0] - 'a');
 
 	return (s);
 }
