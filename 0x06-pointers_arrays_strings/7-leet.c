@@ -1,0 +1,31 @@
+#include "main.h"
+/**
+ * *leet - encoding
+ * @s: string
+ * Return: s
+ *
+ */
+char *leet(char *s)
+{
+	char low_up[5][2] = {{'a', 'A'}, {'e', 'E'}, {'o', 'O'}, {'t', 'T'}, {'l', 'L'}};
+
+	char val[] = {'4', '3', '0', '7', '1'};
+
+	int i = 0, j;
+
+	while (s[i] != 0)
+	{
+		char c = s[i];
+
+		for (j = 0; j < 5; j++)
+		{
+			if (c == low_up[j][0] || c == low_up[j][1])
+			{
+				s[i] = val[j];
+				break;
+			}
+		}
+		i++;
+	}
+	return (s);
+}
