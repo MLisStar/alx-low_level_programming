@@ -20,7 +20,7 @@ char *rot13(char *s)
 		{
 			if (c == first[j])
 			{
-				s[i] = first[j];
+				s[i] = next[j];
 			}
 		}
 		i++;
