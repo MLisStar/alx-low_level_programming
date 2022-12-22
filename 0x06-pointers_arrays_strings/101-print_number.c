@@ -27,7 +27,7 @@ void print_number(int n)
 		int pow = 1;
 		int j, k;
 
-		for (j = 0; j < k - i - 1; j++)
+		for (j = 0; j < d - i - 1; j++)
 		{
 			pow = pow * 10;
 		}
