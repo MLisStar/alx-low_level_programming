@@ -11,7 +11,7 @@ char *cap_string(char *s)
 
 	char arr[] = {32, 10, 9, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-	int size = sizeof(seps) / sizeof(seps[0]);
+	int size = sizeof(arr) / sizeof(arr[0]);
 
 	while (s[i] != 0)
 	{
