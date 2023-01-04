@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _memcpy - Entry point
+ * _memcpy - fnct to copy memory content source to a char destination.
  * @dest: input
  * @src: input
  * @n: input
