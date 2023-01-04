@@ -5,7 +5,7 @@
  * @haystack: string to search
  * Return: pointer
  */
-char *strstr(char *haystack, char *needle)
+char *_strstr(char *haystack, char *needle)
 {
 	while (*haystack)
 	{
