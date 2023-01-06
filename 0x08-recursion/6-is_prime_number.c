@@ -3,7 +3,7 @@
 int is_divisible(int num, int div);
 int is_prime_number(int n);
 /**
- * is_devesible - checks if a number is divisible
+ * is_divisible - checks if a number is divisible
  * @num: the number to be checked.
  * @div: the divisor
  * Return: if is deveisible - 0. if not - (-1)
