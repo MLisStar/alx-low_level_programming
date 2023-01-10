@@ -6,7 +6,7 @@
  * @c: char
  * Retunr: pointer to array or NULL is fail
  */
-char *create_array(unsigned int, char c)
+char *create_array(unsigned int size, char c)
 {
 	char *pointer;
 	unsigned int i;
