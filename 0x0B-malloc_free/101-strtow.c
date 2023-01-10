@@ -87,9 +87,9 @@ char **strstow(char *str)
 		for (l = 0; l < letters; l++)
 			strings[w][l] = str[i++];
 
-		strings[w] = NULL;
-
-		return (strings);
+		string[w][l] = '\0';
 	}
-}
+	strings[w] = NULL;
+	
+	return (strings);
 }
