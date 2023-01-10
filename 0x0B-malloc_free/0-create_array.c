@@ -1,17 +1,17 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * create_array - creates a dynamic memory allocation filled with a specific char c.
+ * create_array - creates a dynamic memory allocation.
  * @size: size of array
  * @c: char
- * Retunr: pointer to array or NULL is fail
+ * Return: pointer to array or NULL is fail
  */
 char *create_array(unsigned int size, char c)
 {
 	char *pointer;
 	unsigned int i;
-	
-	if (size ==0)
+
+	if (size == 0)
 		return (NULL);
 	pointer = malloc(sizeof(char) * size);
 
@@ -21,6 +21,7 @@ char *create_array(unsigned int size, char c)
  */
 	if (pointer == NULL)
 		return (NULL);
+
 	else
 	{
 		for (i = 0; i < size; i++)
