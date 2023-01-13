@@ -40,7 +40,7 @@ int _strlen(char *s)
  */
 void error(void)
 {
-	printf("error");
+	printf("error\n");
 	exit(98);
 }
 /**
@@ -61,7 +61,7 @@ void error(void)
 
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
-	len = len + len2 + 1;
+	len = len1 + len2 + 1;
 	prod = malloc(sizeof(int) * len);
 
 	if (!prod)
