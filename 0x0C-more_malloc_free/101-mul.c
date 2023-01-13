@@ -57,7 +57,7 @@ void error(void)
 	s1 = argv[1], s2 = argv[2];
 
 	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
-		errors();
+		error();
 
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
