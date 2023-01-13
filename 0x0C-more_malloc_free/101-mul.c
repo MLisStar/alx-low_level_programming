@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 #include <stdio.h>
+#define ERR_MSG "Error"
 /**
  * is_digit - checks for digit
  * @s: string to be evaluated
