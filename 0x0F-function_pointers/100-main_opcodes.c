@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int count, bytes;
+	int i, bytes;
 
 	if (argc != 2)
 	{
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		if (i < bytes - 1)
 			printf(" ");
 		else
-			printf('\n');
+			printf("\n");
 	}
 	return (0);
 }
