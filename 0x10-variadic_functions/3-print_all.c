@@ -1,92 +1,113 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "variadic_functions.h"
+#include <stdio.h>
+#include <stdarg.h>
+
+void print_char(va_list arg);
+void print_int(va_list arg);
+void print_float(va_list arg);
+void print_string(va_list arg);
+void print_all(const char * const format, ...);
 
 /**
- * pr_int - print a integer type;
- * @val: a va_list struct to process;
+ * print_char - Prints a char.
+ * @arg: A list of arguments pointing to
+ *       the character to be printed.
  */
-void pr_int(va_list val)
+void print_char(va_list arg)
 {
-	printf("%d", va_arg(val, int));
+	char letter;
+
+	letter = va_arg(arg, int);
+	printf("%c", letter);
 }
 
 /**
- * pr_char - print a char type;
- * @val: a va_list struct to process;
+ * print_int - Prints an int.
+ * @arg: A list of arguments pointing to
+ *       the integer to be printed.
  */
-void pr_char(va_list val)
+void print_int(va_list arg)
 {
-	printf("%c", va_arg(val, int));
+	int num;
+
+	num = va_arg(arg, int);
+	printf("%d", num);
 }
 
 /**
- * pr_float - prints a double type;
- * @val: a va_list struct to process;
+ * print_float - Prints a float.
+ * @arg: A list of arguments pointing to
+ *       the float to be printed.
  */
-void pr_float(va_list val)
+void print_float(va_list arg)
 {
-	printf("%f", va_arg(val, double));
+	float num;
+
+	num = va_arg(arg, double);
+	printf("%f", num);
 }
 
 /**
- * pr_str - print a string type or (nil) if empty/NULL;
- * @val: a va_list struct to process;
+ * print_string - Prints a string.
+ * @arg: A list of arguments pointing to
+ *       the string to be printed.
  */
-void pr_str(va_list val)
+void print_string(va_list arg)
 {
-	char *r;
+	char *str;
 
-	r = va_arg(val, char *);
-	switch (!r)
+	str = va_arg(arg, char *);
+
+	if (str == NULL)
 	{
-	case 0:
-		printf("%s", r);
-		break;
-	case 1:
 		printf("(nil)");
-		break;
+		return;
 	}
 
+	printf("%s", str);
 }
 
 /**
- * print_all - print all argument that match with format.
- * @format: type to print out.
- * @...: arguments to print.
- * Return: Nothing
+ * print_all - Prints anything, followed by a new line.
+ * @format: A string of characters representing the argument types.
+ * @...: A variable number of arguments to be printed.
+ *
+ * Description: Any argument not of type char, int, float,
+ *              or char * is ignored.
+ *              If a string argument is NULL, (nil) is printed instead.
  */
 void print_all(const char * const format, ...)
 {
-
-	int i, j;
-	va_list vls;
-	p_op ops[] = {
-		{"c", pr_char},
-		{"i", pr_int},
-		{"f", pr_float},
-		{"s", pr_str},
-		{NULL, NULL}
+	va_list args;
+	int i = 0, j = 0;
+	char *separator = "";
+	printer_t funcs[] = {
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_string}
 	};
 
-	va_start(vls, format);
-	i = j = 0;
-	while (format && format[j])
-	{
-		i = 0;
-		while (ops[i].op)
-		{
-			if (ops[i].op[0] == format[j])
-			{
-				(ops[i].f)(vls);
-				if (format[j + 1])
-					printf(", ");
-			}
-			i++;
-		}
-		j++;
+	va_start(args, format);
 
+	while (format && (*(format + i)))
+	{
+		j = 0;
+
+		while (j < 4 && (*(format + i) != *(funcs[j].symbol)))
+			j++;
+
+		if (j < 4)
+		{
+			printf("%s", separator);
+			funcs[j].print(args);
+			separator = ", ";
+		}
+
+		i++;
 	}
-	putchar(10);
-	va_end(vls);
+
+	printf("\n");
+
+	va_end(args);
 }
