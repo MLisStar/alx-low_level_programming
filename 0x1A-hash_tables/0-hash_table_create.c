@@ -4,7 +4,7 @@
  * hash_table_create - creates a hash table with a given size
  *
  * @size: size of hash table
- * Return:created hash table, or NULL if func fails
+ * Return: created hash table, or NULL if func fails
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
