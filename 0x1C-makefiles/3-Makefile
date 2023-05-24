@@ -17,4 +17,4 @@ fclean: clean oclean
 
 re: oclean all
 
-.PHONY: clean oclean flcean re
+.PHONY: clean oclean fclean re
