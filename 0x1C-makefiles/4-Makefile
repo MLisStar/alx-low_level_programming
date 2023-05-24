@@ -1,9 +1,9 @@
 CC=gcc
 SRC=amin.c school.c
-OBJ=$(SRC:%.c=%.o)
+OBJ=$(SRC:.c=.o)
 NAME=school
 RM=rm -f
-CFLAGS=Wall -Werror -Wectra -pedantic
+CFLAGS= -Wall -Werror -Wectra -pedantic
 
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
@@ -17,3 +17,5 @@ oclean:
 fclean: clean oclean
 
 re: oclean all
+
+.PHONY: clean oclean fclean re
